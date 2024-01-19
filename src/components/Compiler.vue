@@ -37,7 +37,7 @@ const iframeContent = ref();
 <template>
   <h2 class="text-3xl font-bold mb-8">Task 2</h2>
 
-  <div class="grid grid-cols-2 gap-4">
+  <div class="grid grid-cols-2 gap-4 min-h-[300px] h-full">
 
     <div class="space-y-4">
       <Html v-model="html"/>
@@ -46,7 +46,7 @@ const iframeContent = ref();
     </div>
 
     <div>
-      <iframe ref="iframeContent" ></iframe>
+      <iframe ref="iframeContent" class="w-full h-full"></iframe>
     </div>
   </div>
 </template>
